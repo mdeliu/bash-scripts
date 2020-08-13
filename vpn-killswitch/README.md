@@ -4,12 +4,12 @@
 
 2. Check which is the right VPN Interface and edit the `vpn-killswitch-on.sh` script
 
-´´´
+```
 sudo ifconfig
-´´´
-´´´
+```
+```
 nano vpn-killswitch-on.sh
-´´´
+```
 
 3. Make it executable
 
@@ -17,15 +17,15 @@ nano vpn-killswitch-on.sh
 sudo chmod +x vpn-killswitch-off.sh vpn-killswitch-on.sh
 ```
 
+4. Connect to VPN
 
-4. Usage
-
-1. Connect to VPN
-2. Start the firewall
+5. Start the firewall
 
 ```
 ./firewall.sh
 ```
 
-3. If disconnected, then
-> ./unfirewall.sh
+5. If disconnected from the VPN, then
+```
+./unfirewall.sh
+```
